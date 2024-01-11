@@ -1,9 +1,11 @@
-def main():
-    print('My first git program')
-    print('And I change it every day')
-    print('Again')
-    print('UFO came and added this line')
+import pygame
 
 
-if __name__ == '__main__':
-    main()
+pygame.init()
+size = width, height = 1000, 600
+screen = pygame.display.set_mode(size)
+
+pygame.display.flip()
+while pygame.event.wait().type != pygame.QUIT:
+    pass
+pygame.quit()
